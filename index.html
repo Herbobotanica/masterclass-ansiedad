@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masterclass gratuita: Ansiedad y Flores de Bach en animales | Herbo Academy</title>
+<meta name="description" content="Anotate gratis a la masterclass de Herbo Academy: Ansiedad y Flores de Bach en animales. Miércoles 24 de junio, 18hs, por Google Meet. Cupos limitados.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Masterclass gratuita: Ansiedad y Flores de Bach en animales">
+<meta property="og:description" content="Una muestra de la Formación en Flores de Bach y Animales, con foco en ansiedad. Miércoles 24/6, 18hs, por Google Meet.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --verde: #2D4F48;
+    --amarillo: #F7F262;
+    --violeta: #7D7CF3;
+    --crema: #E8E6DF;
+    --blanco: #FFFFFF;
+    --negro: #1A1A1A;
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+
+  html{ scroll-behavior: smooth; }
+
+  body{
+    font-family: 'Quicksand', sans-serif;
+    background: var(--crema);
+    color: var(--negro);
+    line-height: 1.6;
+  }
+
+  img{ max-width:100%; display:block; }
+
+  .container{
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background: var(--verde);
+    color: var(--blanco);
+    padding: 56px 0 64px;
+  }
+
+  .hero .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 22px;
+  }
+
+  .logo-mark{
+    width: 64px;
+    height: 64px;
+    border: 2px solid var(--blanco);
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 26px;
+  }
+
+  .eyebrow{
+    display:inline-block;
+    background: var(--amarillo);
+    color: var(--verde);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 8px 18px;
+    border-radius: 999px;
+  }
+
+  .hero h1{
+    font-weight: 700;
+    font-size: clamp(28px, 5vw, 46px);
+    line-height: 1.2;
+    max-width: 760px;
+  }
+
+  .hero h1 span{
+    color: var(--amarillo);
+  }
+
+  .hero p.lead{
+    font-weight: 500;
+    font-size: clamp(16px, 2.4vw, 20px);
+    max-width: 620px;
+    color: rgba(255,255,255,0.92);
+  }
+
+  .hero-meta{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 12px;
+    margin-top: 6px;
+  }
+
+  .pill{
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.25);
+    color: var(--blanco);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 9px 18px;
+    border-radius: 999px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+
+  .btn-primary{
+    display:inline-block;
+    background: var(--amarillo);
+    color: var(--verde);
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 16px 38px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    transition: transform .15s ease, box-shadow .15s ease;
+    margin-top: 8px;
+  }
+
+  .btn-primary:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+  }
+
+  /* ---------- SECTION GENERAL ---------- */
+  section{
+    padding: 60px 0;
+  }
+
+  .section-title{
+    font-weight: 700;
+    font-size: clamp(24px, 4vw, 34px);
+    color: var(--verde);
+    text-align:center;
+    margin-bottom: 8px;
+  }
+
+  .section-sub{
+    text-align:center;
+    color: var(--violeta);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    margin-bottom: 28px;
+  }
+
+  /* ---------- TEMARIO ---------- */
+  .temario{
+    background: var(--blanco);
+  }
+
+  .temario-grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 32px;
+  }
+
+  @media (max-width: 640px){
+    .temario-grid{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .temario-card{
+    background: var(--crema);
+    border-radius: 18px;
+    padding: 26px 22px;
+  }
+
+  .temario-card .tag{
+    display:inline-block;
+    background: var(--amarillo);
+    color: var(--verde);
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 999px;
+    padding: 5px 14px;
+    margin-bottom: 14px;
+  }
+
+  .temario-card p{
+    font-weight: 600;
+    color: var(--negro);
+    font-size: 16px;
+  }
+
+  .temario-card.featured{
+    grid-column: span 2;
+    background: var(--verde);
+  }
+
+  .temario-card.featured .tag{
+    background: var(--amarillo);
+    color: var(--verde);
+  }
+
+  .temario-card.featured p{
+    color: var(--blanco);
+  }
+
+  @media (max-width: 640px){
+    .temario-card.featured{
+      grid-column: span 1;
+    }
+  }
+
+  /* ---------- FORM SECTION ---------- */
+  .form-section{
+    background: var(--violeta);
+    color: var(--blanco);
+  }
+
+  .form-section .section-title{
+    color: var(--blanco);
+  }
+
+  .form-section .section-sub{
+    color: var(--amarillo);
+  }
+
+  .form-wrapper{
+    background: var(--blanco);
+    border-radius: 24px;
+    padding: 36px;
+    max-width: 520px;
+    margin: 32px auto 0;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.15);
+  }
+
+  .form-wrapper p.helper{
+    color: var(--negro);
+    text-align:center;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 16px;
+  }
+
+  .cupo-note{
+    text-align:center;
+    font-weight: 600;
+    margin-top: 24px;
+    color: var(--blanco);
+  }
+
+  /* ---------- FORMACIÓN COMPLETA ---------- */
+  .formacion{
+    background: var(--verde);
+    color: var(--blanco);
+    text-align:center;
+  }
+
+  .formacion .section-title{ color: var(--blanco); }
+  .formacion .section-sub{ color: var(--amarillo); }
+
+  .formacion p{
+    max-width: 620px;
+    margin: 0 auto 24px;
+    font-size: 16px;
+    color: rgba(255,255,255,0.9);
+  }
+
+  .formacion .btn-primary{
+    margin-top: 4px;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    background: var(--crema);
+    text-align:center;
+    padding: 32px 0 44px;
+  }
+
+  footer p{
+    font-size: 12px;
+    color: #6b6b6b;
+    font-weight: 500;
+    max-width: 620px;
+    margin: 0 auto 8px;
+    font-style: italic;
+  }
+
+  footer .brand{
+    font-weight: 700;
+    color: var(--verde);
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-style: normal;
+  }
+
+  @media (max-width: 600px){
+    .hero{ padding: 40px 0 48px; }
+    section{ padding: 44px 0; }
+    .form-wrapper{ padding: 24px; border-radius: 18px; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="logo-mark" aria-hidden="true">🌿</div>
+      <span class="eyebrow">Masterclass gratuita · Herbo Academy</span>
+      <h1>Ansiedad y <span>Flores de Bach</span> en animales</h1>
+      <p class="lead">
+        Si te interesa la terapia floral en animales, esto es para vos. Una muestra de todo lo que vas a aprender en la
+        Formación en Flores de Bach y Animales, con foco en un tema clave: la ansiedad.
+      </p>
+      <div class="hero-meta">
+        <span class="pill">📅 Miércoles 24 de junio</span>
+        <span class="pill">🕕 18 hs (Arg)</span>
+        <span class="pill">💻 Por Google Meet</span>
+        <span class="pill">🎟️ Cupos limitados</span>
+      </div>
+      <a href="#anotarme" class="btn-primary">Quiero anotarme gratis</a>
+    </div>
+  </header>
+
+  <!-- TEMARIO -->
+  <section class="temario">
+    <div class="container">
+      <h2 class="section-title">¿Qué vas a ver en la masterclass?</h2>
+      <p class="section-sub">24 de junio · 18 hs · Google Meet</p>
+      <div class="temario-grid">
+        <div class="temario-card featured">
+          <span class="tag">🐾 Ansiedad en animales</span>
+          <p>Cómo detectar comportamientos ansiosos en nuestros peludos y observar qué emociones se esconden detrás de esas conductas.</p>
+        </div>
+        <div class="temario-card">
+          <span class="tag">✨ Consulta</span>
+          <p>Cómo abordamos una consulta floral paso a paso.</p>
+        </div>
+        <div class="temario-card">
+          <span class="tag">✨ Observación</span>
+          <p>A qué preguntas y señales prestar atención en el animal.</p>
+        </div>
+        <div class="temario-card">
+          <span class="tag">✨ Selección floral</span>
+          <p>Cómo traducimos esa información en flores específicas.</p>
+        </div>
+        <div class="temario-card">
+          <span class="tag">✨ Administración</span>
+          <p>De qué manera recomendamos administrar las flores.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM / INSCRIPCIÓN -->
+  <section class="form-section" id="anotarme">
+    <div class="container">
+      <h2 class="section-title">Anotate gratis</h2>
+      <p class="section-sub">Te enviamos el link de acceso por mail</p>
+
+      <div class="form-wrapper">
+        <!-- Optin - Inicio -->
+        <div id="optin-k0KznG3c" data-type="inline"></div>
+        <link rel="stylesheet" type="text/css" href="https://optin.myperfit.com/res/css/herbobotanica/k0KznG3c.css"/>
+        <script type="text/javascript" src="https://optin.myperfit.com/res/js/herbobotanica/k0KznG3c.js" charset="UTF-8"></script>
+        <!-- Optin - Fin -->
+        <p class="helper">Dejanos tu mail y te llega toda la info + el link para sumarte el 24/6 🌿</p>
+      </div>
+
+      <p class="cupo-note">🎟️ Los cupos son limitados — ¡anotate ya!</p>
+    </div>
+  </section>
+
+  <!-- FORMACIÓN COMPLETA -->
+  <section class="formacion">
+    <div class="container">
+      <h2 class="section-title">¿Querés ir más a fondo?</h2>
+      <p class="section-sub">Después de la masterclass</p>
+      <p>
+        Esta clase es una muestra de todo lo que trabajamos en la <strong>Formación en Flores de Bach y Animales</strong> de
+        Herbo Academy: una formación práctica basada en años de experiencia real de consultorio,
+        para tutores, veterinarios y emprendedores del bienestar animal.
+      </p>
+      <a href="https://herboacademy.com.ar" class="btn-primary">Conocer la Formación</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p class="brand">Herbo Academy 🌿🐾</p>
+      <p>
+        La terapia floral y la aromaterapia son complementos del bienestar emocional animal y no reemplazan
+        la atención veterinaria profesional. Ante cualquier duda de salud, consultá siempre con tu veterinario/a de confianza.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
